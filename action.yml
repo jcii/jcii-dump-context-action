@@ -6,6 +6,9 @@ inputs:
     required: true
     description: 'input description here'
     default: '400'
+  blahblah_token:
+    required: true
+    description: 'blahblah is unique and easy to search for'
 runs:
   using: 'node16'
   main: 'dist/index.js'
