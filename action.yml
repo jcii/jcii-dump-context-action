@@ -1,11 +1,11 @@
-name: 'Your name here'
-description: 'Provide a description here'
+name: 'jcii-dump-context-action'
+description: 'dumping the context of the action'
 author: 'Your name or organization here'
 inputs:
-  milliseconds: # change this
+  milliseconds:
     required: true
     description: 'input description here'
-    default: 'default value if applicable'
+    default: '400'
 runs:
   using: 'node16'
   main: 'dist/index.js'
