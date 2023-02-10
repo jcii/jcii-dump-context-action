@@ -13,7 +13,7 @@ async function run(): Promise<void> {
     core.info(new Date().toTimeString())
 
     core.setOutput('time', new Date().toTimeString())
-    const octokit = new GitHub(core.getInput('github_token'))
+    const octokit = new GitHub(core.getInput('blahblah_token'))
     const response = await octokit.repos.listBranches({
       ...context.repo
     })

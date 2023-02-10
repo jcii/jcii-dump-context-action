@@ -48,7 +48,7 @@ function run() {
             yield (0, wait_1.wait)(parseInt(ms, 10));
             core.info(new Date().toTimeString());
             core.setOutput('time', new Date().toTimeString());
-            const octokit = new github_1.GitHub(core.getInput('github_token'));
+            const octokit = new github_1.GitHub(core.getInput('blahblah_token'));
             const response = yield octokit.repos.listBranches(Object.assign({}, github_1.context.repo));
             console.log(response.data);
         }
